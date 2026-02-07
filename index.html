@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Valentine’s Day ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte romântica -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(120deg, #ffdde1, #ee9ca7);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: #fff;
+            color: #e75480;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #ffe6ec;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "❤️ ";
+        }
+
+        footer {
+            padding: 40px;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Botão música */
+        .music-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #fff;
+            color: #e75480;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HOME -->
+<section>
+    <h1>Feliz Valentine’s Day, Runalda Nunes ❤️</h1>
+    <p>Há <strong>1 ano e 7 meses</strong> que o meu coração escolhe o teu todos os dias.</p>
+    <a href="#historia" class="btn">Descobrir o nosso amor</a>
+</section>
+
+<!-- HISTÓRIA -->
+<section id="historia">
+    <div class="card">
+        <h2>Nossa História</h2>
+        <p>
+            Há 1 ano e 7 meses começou uma história que mudou a minha vida para sempre.
+            Cada conversa, cada sorriso e cada momento ao teu lado tornaram o nosso amor
+            mais forte, mais bonito e mais verdadeiro.
+        </p>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section>
+    <div class="card">
+        <h2>Galeria de Memórias</h2>
+        <p>
+            Cada foto aqui guardada carrega um momento que vive eternamente
+            no meu coração.
+        </p>
+        <p><em>(Adicione aqui as vossas fotos favoritas)</em></p>
+    </div>
+</section>
+
+<!-- CARTA -->
+<section>
+    <div class="card">
+        <h2>Carta de Amor</h2>
+        <p>
+            <strong>Meu amor Runalda,</strong><br><br>
+            Amar-te nestes 1 ano e 7 meses foi aprender o verdadeiro significado
+            de companheirismo, carinho e amor sincero. Tu és a minha paz,
+            o meu sorriso e a minha maior certeza.
+            <br><br>
+            Prometo continuar a escolher-te todos os dias,
+            em cada detalhe e em cada sonho.
+            <br><br>
+            <strong>Com todo o meu amor, hoje e sempre.</strong>
+        </p>
+    </div>
+</section>
+
+<!-- RAZÕES -->
+<section>
+    <div class="card">
+        <h2>Razões Pelas Quais Te Amo</h2>
+        <ul>
+            <li>O teu sorriso ilumina os meus dias</li>
+            <li>Contigo sinto-me em casa</li>
+            <li>A tua sinceridade e carinho</li>
+            <li>Porque me fazes querer ser melhor</li>
+            <li>Porque o nosso amor é verdadeiro</li>
+        </ul>
+    </div>
+</section>
+
+<!-- SURPRESA FINAL -->
+<section>
+    <h1>Eu escolheria você em todas as vidas ❤️</h1>
+    <p>Feliz Valentine’s Day, meu amor.</p>
+</section>
+
+<footer>
+    Feito com amor 💖 ao som de <em>Dave feat. Tems – Rain</em>
+</footer>
+
+<!-- MÚSICA -->
+<audio id="music" loop>
+    <!-- Substitua pelo link correto da música -->
+    <source src="rain.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<script>
+    const music = document.getElementById("music");
+    let playing = false;
+
+    function toggleMusic() {
+        if (!playing) {
+            music.play();
+            playing = true;
+        } else {
+            music.pause();
+            playing = false;
+        }
+    }
+</script>
+
+</body>
+</html>
